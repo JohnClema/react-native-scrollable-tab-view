@@ -136,7 +136,7 @@ const ScrollableTabBar = React.createClass({
     >
       <View style={[styles.tab, this.props.tabStyle, ]}>
         <Text style={[{color: textColor, fontWeight, }, textStyle, ]}>
-          {name}
+          {name.toUpperCase()}
         </Text>
       </View>
     </Button>;
@@ -218,15 +218,15 @@ module.exports = ScrollableTabBar;
 
 const styles = StyleSheet.create({
   tab: {
-    height: 49,
+    height: 40,
     alignItems: 'center',
     justifyContent: 'center',
     paddingLeft: 20,
     paddingRight: 20,
   },
   container: {
-    height: 50,
-    borderWidth: 1,
+    height: 40,
+    borderWidth: 0,
     borderTopWidth: 0,
     borderLeftWidth: 0,
     borderRightWidth: 0,
