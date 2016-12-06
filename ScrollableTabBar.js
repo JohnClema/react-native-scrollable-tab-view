@@ -1,5 +1,3 @@
-import LinearGradient from 'react-native-linear-gradient'
-
 const React = require('react');
 const ReactNative = require('react-native');
 const {
@@ -178,7 +176,6 @@ const ScrollableTabBar = React.createClass({
                 bounces={false}
                 scrollsToTop={false}
                 >
-                <LinearGradient style={{ flex: 1, }} colors={['#000000', 'rgba(0,0,0,0)']}>
                     <View
                         style={[styles.tabs, { width: this.state._containerWidth, }, this.props.tabsContainerStyle,]}
                         ref={'tabContainer'}
@@ -191,7 +188,6 @@ const ScrollableTabBar = React.createClass({
                         })}
                         <Animated.View style={[tabUnderlineStyle, dynamicTabUnderline, this.props.underlineStyle,]} />
                     </View>
-                </LinearGradient>
             </ScrollView>
         </View>
         )
